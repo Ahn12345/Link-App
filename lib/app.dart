@@ -19,17 +19,17 @@ import 'features/splash/splash_screen.dart';
 
 const _localePrefKey = 'app_locale_override_v1';
 
-class LinkApp extends StatefulWidget {
-  const LinkApp({super.key});
+class Link26App extends StatefulWidget {
+  const Link26App({super.key});
 
-  static LinkAppState? maybeOf(BuildContext context) =>
-      context.findAncestorStateOfType<LinkAppState>();
+  static Link26AppState? maybeOf(BuildContext context) =>
+      context.findAncestorStateOfType<Link26AppState>();
 
   @override
-  State<LinkApp> createState() => LinkAppState();
+  State<Link26App> createState() => Link26AppState();
 }
 
-class LinkAppState extends State<LinkApp> {
+class Link26AppState extends State<Link26App> {
   Locale? _localeOverride;
   bool _ready = false;
 
@@ -75,7 +75,7 @@ class LinkAppState extends State<LinkApp> {
     }
     return MaterialApp(
       locale: _localeOverride,
-      title: 'Link App',
+      title: 'Link26 App',
       theme: AppTheme.light,
       initialRoute: SplashScreen.routeName,
       localizationsDelegates: [
